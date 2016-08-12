@@ -1,0 +1,69 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1,SHA512
+
+Fri Aug 12 02:35:25 EEST 2016
+
+Hello,
+
+I am transitioning from my old 1024-bit DSA key to a new 4096-bit RSA key.
+
+The old key has not been compromised and will continue to be valid for some
+time, but please use the new key for all future correspondence. I have signed
+this statement with both keys to certify the transition.
+
+To verify the integrity of this statement:
+
+    wget -q -O- http://vkoukis.github.io/key-transition-1D038E97.txt | gpg --verify
+
+The old key, which I am transitioning away from, is:
+
+pub   1024D/1D038E97 2003-07-13
+      Key fingerprint = C5CD E02E 2C78 7C10 8A00  53D8 FBFC 3799 1D03 8E97
+
+The new key, which I am transitioning to, is:
+
+pub   4096R/9625256D 2016-08-11
+      Key fingerprint = C43E 6E97 BB4D F668 635D  3CA8 0A9C C92E 9625 256D
+
+To fetch the new key from a public key server:
+
+    gpg --keyserver pgp.mit.edu --recv-key 9625256D
+
+If you have already validated my old key, you can now verify that I have
+signed the new key with my old key:
+
+    gpg --check-sigs 9625256D
+
+Finally, you can check the fingerprint of the new key:
+
+    gpg --fingerprint 9625256D
+
+and if you want, sign it:
+
+    gpg --sign-key 9625256D
+
+If you decide to sign the new key, please upload your signatures to the public
+key server:
+
+    gpg --keyserver pgp.mit.edu --send-key 9625256D
+
+Thanks,
+Vangelis.
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAletF/0ACgkQ+/w3mR0DjpfLOwCg4zf+wPhxu8KXX7WKf20oWrzo
+Qz8An2pzG+h+H440dPObuIZhglzCTzVpiQIcBAEBCgAGBQJXrRf9AAoJEAqcyS6W
+JSVtIEAP/3wel1LDCoXyfNq9hOKPLLNQWjyhunbW5KD5ykIOQ+AvzzS+40ZSPCVf
+k3po9LE+aJD5ovNHmMQ24B5qdqteXFYzzVNiBUD6hEKMRKqQJlX1VOiHvo4waGOC
+ffcE5006hHUfdalpampS6pdV5qdaxI5RCBczUhJSb5MPuwQ3ovwa5Kq8gvwDlWS6
+wlmJiy3jp7yWZ/B4vXjOXZQCA0ywq1G/6ubgbNEKIrurxlzFcQvNpPZXCFmXEAOe
+E96XY+HfECLzA4SslCWvSbO5GjidXPsxPQBX3zQQNcrEurYFSAjWQHhTqESkB0uV
+r5f+ssdQUntI1Avdieb2RbWNaYjyoryCtGozYdNc19NKxsPg4/FGbLgE38zFP51e
+a59+nUdMc4UfdPtGzKQQWfFMyOy5LCQ+6gEYxisPybF7Xdz1RoeyPfNz9ioDunO8
+BndSO+RhnQZsFGRYb4aP2kUkFrmWxid19k0SToL3jplNLi4nuz6GNMdxSjU5Se8p
+MtOOcM0Yh92M0DeZzSaVlfjRf7xNXqF8ZW9/i82F5ErG/RIUToU+ntWs8Rcg4koY
+p10Rnw2gH/Urspi6rw+y24MnUeZtUWczS3k+6JWoOv+fQsWcjvAMjlyAONWKAq1s
+ZJLriiq3Kn49fITVjRVawB5DmgHe6HqEPMbTBRKtSiU7uA+EA2Yj
+=CF6X
+-----END PGP SIGNATURE-----
